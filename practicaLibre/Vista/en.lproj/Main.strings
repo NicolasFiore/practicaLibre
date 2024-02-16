@@ -1,0 +1,66 @@
+
+/* Class = "UIViewController"; title = "Mis Compras"; ObjectID = "2Na-am-7X7"; */
+"2Na-am-7X7.title" = "Mis Compras";
+
+/* Class = "UILabel"; text = "Nicolás"; ObjectID = "6Do-im-50k"; */
+"6Do-im-50k.text" = "Nicolás";
+
+/* Class = "UIViewController"; title = "Inicio"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Inicio";
+
+/* Class = "UIViewController"; title = "Notificaciones"; ObjectID = "JnS-Qb-yyA"; */
+"JnS-Qb-yyA.title" = "Notificaciones";
+
+/* Class = "UILabel"; text = "Mi perfil >"; ObjectID = "MRq-RF-EHH"; */
+"MRq-RF-EHH.text" = "Mi perfil >";
+
+/* Class = "UILabel"; text = "Favoritos"; ObjectID = "Maf-1d-kEN"; */
+"Maf-1d-kEN.text" = "Favoritos";
+
+/* Class = "UITabBarItem"; title = "Más"; ObjectID = "NWv-jF-Seg"; */
+"NWv-jF-Seg.title" = "Más";
+
+/* Class = "UISearchBar"; placeholder = "Buscar en Mercado Libre"; ObjectID = "Ocw-wK-8v9"; */
+"Ocw-wK-8v9.placeholder" = "Buscar en Mercado Libre";
+
+/* Class = "UIViewController"; title = "Favoritos"; ObjectID = "XPX-9U-kzS"; */
+"XPX-9U-kzS.title" = "Favoritos";
+
+/* Class = "UIButton"; configuration.title = "   Mercado Pago           >"; ObjectID = "evp-CG-WCr"; */
+"evp-CG-WCr.configuration.title" = "   Mercado Pago           >";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "evp-CG-WCr"; */
+"evp-CG-WCr.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Jose Leon Suarez 5354  >"; ObjectID = "g6j-Kc-lQ3"; */
+"g6j-Kc-lQ3.text" = "Jose Leon Suarez 5354  >";
+
+/* Class = "UIViewController"; title = "Más"; ObjectID = "gWy-Tn-GKv"; */
+"gWy-Tn-GKv.title" = "Más";
+
+/* Class = "UILabel"; text = "Mis Compras"; ObjectID = "h1v-Gy-hne"; */
+"h1v-Gy-hne.text" = "Mis Compras";
+
+/* Class = "UITabBarItem"; title = "Notificaciones"; ObjectID = "hZR-BB-TOY"; */
+"hZR-BB-TOY.title" = "Notificaciones";
+
+/* Class = "UIButton"; configuration.title = "Filtrar"; ObjectID = "lp5-dw-jX9"; */
+"lp5-dw-jX9.configuration.title" = "Filtrar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lp5-dw-jX9"; */
+"lp5-dw-jX9.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Notificaciones"; ObjectID = "oZk-sG-ORl"; */
+"oZk-sG-ORl.text" = "Notificaciones";
+
+/* Class = "UITabBarItem"; title = "Mis Compras"; ObjectID = "qKB-zh-Eag"; */
+"qKB-zh-Eag.title" = "Mis Compras";
+
+/* Class = "UISearchBar"; placeholder = "Buscar"; ObjectID = "sqb-Cn-jNU"; */
+"sqb-Cn-jNU.placeholder" = "Buscar";
+
+/* Class = "UITabBarItem"; title = "Favoritos"; ObjectID = "uPe-W4-pvA"; */
+"uPe-W4-pvA.title" = "Favoritos";
+
+/* Class = "UITabBarItem"; title = "Inicio"; ObjectID = "vFA-8k-iTt"; */
+"vFA-8k-iTt.title" = "Inicio";
