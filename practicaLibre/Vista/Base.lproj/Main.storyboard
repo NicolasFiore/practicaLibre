@@ -77,11 +77,11 @@
             <objects>
                 <viewController title="Inicio" id="BYZ-38-t0r" customClass="ViewController" customModule="practicaLibre" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Buscar en Mercado Libre" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocw-wK-8v9">
-                                <rect key="frame" x="20" y="64" width="328" height="56"/>
+                                <rect key="frame" x="20" y="5" width="328" height="56"/>
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -100,18 +100,18 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jose Leon Suarez 5354  &gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6j-Kc-lQ3">
-                                <rect key="frame" x="44.666666666666657" y="135" width="179" height="18"/>
+                                <rect key="frame" x="44.666666666666657" y="76" width="179" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kr5-s8-tag">
-                                <rect key="frame" x="0.0" y="158" width="393" height="694"/>
+                                <rect key="frame" x="0.0" y="99" width="393" height="743"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSg-Uc-xNG">
-                                <rect key="frame" x="353" y="74" width="35" height="35"/>
+                                <rect key="frame" x="353" y="15" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="dPO-Nc-vft"/>
                                     <constraint firstAttribute="width" constant="35" id="rcT-Uq-8uK"/>
@@ -384,6 +384,7 @@
                     <tabBarItem key="tabBarItem" title="Más" image="line.3.horizontal" catalog="system" id="NWv-jF-Seg"/>
                     <connections>
                         <outlet property="tablaOpciones" destination="KUa-UU-xbD" id="Ztg-y9-ecW"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="inicio" id="2wc-Gk-CPd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojB-ec-Vb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -494,6 +495,9 @@
             <point key="canvasLocation" x="-273" y="-2132"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2wc-Gk-CPd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="bag" catalog="system" width="128" height="128"/>
