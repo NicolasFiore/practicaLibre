@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var direccion: UILabel!
     
     var productos: [ProductoModelo] = []
+    public var producFavorito: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +47,14 @@ class ViewController: UIViewController {
         productos.append(producto6)
         productos.append(producto7)
         
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         barraDeBusqueda.resignFirstResponder()
+    }
+    @IBAction func carrito(_ sender: Any) {
     }
     
 }

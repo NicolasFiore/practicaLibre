@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zc0-4f-bza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-308" y="-1988"/>
+            <point key="canvasLocation" x="-309" y="-2035"/>
         </scene>
         <!--Inicio-->
         <scene sceneID="tne-QT-ifu">
@@ -145,7 +145,7 @@
                                     </imageReference>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="pruebaPedorra:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GY7-aG-Bvc"/>
+                                    <action selector="carrito:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cU-Sv-yvu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309.16030534351142" y="-332.3943661971831"/>
+            <point key="canvasLocation" x="-309" y="-1322"/>
         </scene>
         <!--Mis Compras-->
         <scene sceneID="Ogm-ae-QoM">
@@ -249,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wlp-dL-iGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309.16030534351142" y="445.77464788732397"/>
+            <point key="canvasLocation" x="-309" y="-544"/>
         </scene>
         <!--Más-->
         <scene sceneID="fPi-R6-lHd">
@@ -359,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojB-ec-Vb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309" y="-1175"/>
+            <point key="canvasLocation" x="-309" y="373"/>
         </scene>
         <!--Notificaciones-->
         <scene sceneID="0Hk-Oz-83W">
