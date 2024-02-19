@@ -49,16 +49,20 @@ extension MasViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath{
         case [0,0]:
-            performSegue(withIdentifier: "inicio", sender: Any?.self)
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "inicio") as! ViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
             print("Vas a ir al inicio")
         case [0,2]:
-            performSegue(withIdentifier: "notificaciones", sender: Any?.self)
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "notificaciones") as! NotificacionesViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
             print("Vas a ir al notificaciones")
         case [0,3]:
-            performSegue(withIdentifier: "misCompras", sender: Any?.self)
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "misCompras") as! MisComprasViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
             print("Vas a ir al mis compras")
         case [0,4]:
-            performSegue(withIdentifier: "favoritos", sender: Any?.self)
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "favoritos") as! FavoritosViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
             print("Vas a ir al favoritos")
         default:
             print("este no hacen nada")

@@ -21,6 +21,10 @@ class MisComprasViewController: UIViewController {
         buscarCompras.resignFirstResponder()
     }
 
+    @IBAction func navegarInicio(_ sender: Any) {
+        let viewController = self.storyboard!.instantiateViewController(withIdentifier: "inicio") as! ViewController
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
 extension MisComprasViewController:UISearchBarDelegate {

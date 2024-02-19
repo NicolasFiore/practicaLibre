@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var direccion: UILabel!
     
     var productos: [ProductoModelo] = []
-    var productoFavorito: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +46,6 @@ class ViewController: UIViewController {
         productos.append(producto6)
         productos.append(producto7)
         
-        print("Esto es lo que se ve \(productoFavorito)")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
