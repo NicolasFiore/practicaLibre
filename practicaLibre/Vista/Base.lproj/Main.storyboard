@@ -30,7 +30,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ouQ-tu-b6b">
             <objects>
-                <tabBarController hidesBottomBarWhenPushed="YES" id="10D-tS-8j0" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" hidesBottomBarWhenPushed="YES" id="10D-tS-8j0" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="k12-ct-vu7"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="00Y-Cy-V6L">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -203,15 +203,6 @@
                                             <outlet property="delegate" destination="2Na-am-7X7" id="TKB-L4-THQ"/>
                                         </connections>
                                     </searchBar>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSH-va-Snu">
-                                        <rect key="frame" x="157" y="354" width="78" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="ir inicio"/>
-                                        <connections>
-                                            <action selector="navegarInicio:" destination="2Na-am-7X7" eventType="touchUpInside" id="hZ1-RD-adC"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>

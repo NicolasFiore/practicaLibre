@@ -49,19 +49,19 @@ extension MasViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath{
         case [0,0]:
-            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "inicio") as! ViewController
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
             self.navigationController?.pushViewController(viewController, animated: true)
             print("Vas a ir al inicio")
         case [0,2]:
-            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "notificaciones") as! NotificacionesViewController
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
             self.navigationController?.pushViewController(viewController, animated: true)
             print("Vas a ir al notificaciones")
         case [0,3]:
-            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "misCompras") as! MisComprasViewController
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
             self.navigationController?.pushViewController(viewController, animated: true)
             print("Vas a ir al mis compras")
         case [0,4]:
-            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "favoritos") as! FavoritosViewController
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
             self.navigationController?.pushViewController(viewController, animated: true)
             print("Vas a ir al favoritos")
         default:
