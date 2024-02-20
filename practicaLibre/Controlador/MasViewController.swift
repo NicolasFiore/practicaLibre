@@ -18,8 +18,6 @@ class MasViewController: UIViewController {
 
         tablaOpciones.dataSource = self
         tablaOpciones.delegate = self
-        
-        print(opcciones[0][0])
     }
 
 }
@@ -49,21 +47,15 @@ extension MasViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath{
         case [0,0]:
-            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
-            self.navigationController?.pushViewController(viewController, animated: true)
-            print("Vas a ir al inicio")
+            //let viewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+            //self.navigationController?.pushViewController(viewController, animated: true)
+            self.tabBarController?.selectedIndex = 0
         case [0,2]:
-            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
-            self.navigationController?.pushViewController(viewController, animated: true)
-            print("Vas a ir al notificaciones")
+            self.tabBarController?.selectedIndex = 3
         case [0,3]:
-            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
-            self.navigationController?.pushViewController(viewController, animated: true)
-            print("Vas a ir al mis compras")
+            self.tabBarController?.selectedIndex = 2
         case [0,4]:
-            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
-            self.navigationController?.pushViewController(viewController, animated: true)
-            print("Vas a ir al favoritos")
+            self.tabBarController?.selectedIndex = 1
         default:
             print("este no hacen nada")
         }
