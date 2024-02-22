@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var direccion: UILabel!
     
     var productos: [ProductoModelo] = []
-    public var producFavorito: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +53,7 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         barraDeBusqueda.resignFirstResponder()
     }
+    
     @IBAction func carrito(_ sender: Any) {
     }
     
@@ -82,3 +82,5 @@ extension ViewController: UISearchBarDelegate{
         barraDeBusqueda.resignFirstResponder()
     }
 }
+
+

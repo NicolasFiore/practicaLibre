@@ -16,10 +16,6 @@ class FavoritosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //traigo el nombre del producto
-        //comparo el nombre del producto con todos los productos creados
-        //una vez encontrado agrego el producto entero al array productos
-
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ProductosCardTableViewCell", bundle: nil), forCellReuseIdentifier: "mycustomcell")
     }
