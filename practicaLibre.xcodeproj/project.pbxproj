@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		90055D3F2B879F4100EEFAF2 /* NotificacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90055D3D2B879F4100EEFAF2 /* NotificacionTableViewCell.swift */; };
+		90055D3F2B879F4100EEFAF2 /* NotificacionCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90055D3D2B879F4100EEFAF2 /* NotificacionCardTableViewCell.swift */; };
 		90055D402B879F4100EEFAF2 /* NotificacionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90055D3E2B879F4100EEFAF2 /* NotificacionTableViewCell.xib */; };
 		90055D442B87A08200EEFAF2 /* NotificacionesModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90055D432B87A08200EEFAF2 /* NotificacionesModelo.swift */; };
 		902FCE3F2B75221D00D023D8 /* MasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902FCE3E2B75221D00D023D8 /* MasViewController.swift */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		90055D3D2B879F4100EEFAF2 /* NotificacionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificacionTableViewCell.swift; path = ../Vista/NotificacionTableViewCell.swift; sourceTree = "<group>"; };
+		90055D3D2B879F4100EEFAF2 /* NotificacionCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificacionCardTableViewCell.swift; path = ../Vista/NotificacionCardTableViewCell.swift; sourceTree = "<group>"; };
 		90055D3E2B879F4100EEFAF2 /* NotificacionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificacionTableViewCell.xib; sourceTree = "<group>"; };
 		90055D432B87A08200EEFAF2 /* NotificacionesModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificacionesModelo.swift; sourceTree = "<group>"; };
 		902FCE3E2B75221D00D023D8 /* MasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				908C27F92B769A4600F9311E /* FavoritosViewController.swift */,
 				908C27FB2B769A5F00F9311E /* NotificacionesViewController.swift */,
 				90F2E22B2B7E4DBB003892D8 /* ProductosCardTableViewCell.swift */,
-				90055D3D2B879F4100EEFAF2 /* NotificacionTableViewCell.swift */,
+				90055D3D2B879F4100EEFAF2 /* NotificacionCardTableViewCell.swift */,
 			);
 			path = Controlador;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 				90F3F1592B72552A00DD41A5 /* AppDelegate.swift in Sources */,
 				90850A222B73CBD9000BB244 /* MisComprasViewController.swift in Sources */,
 				908C27FC2B769A5F00F9311E /* NotificacionesViewController.swift in Sources */,
-				90055D3F2B879F4100EEFAF2 /* NotificacionTableViewCell.swift in Sources */,
+				90055D3F2B879F4100EEFAF2 /* NotificacionCardTableViewCell.swift in Sources */,
 				90055D442B87A08200EEFAF2 /* NotificacionesModelo.swift in Sources */,
 				90F2E22D2B7E4DBB003892D8 /* ProductosCardTableViewCell.swift in Sources */,
 				90F3F15B2B72552A00DD41A5 /* SceneDelegate.swift in Sources */,

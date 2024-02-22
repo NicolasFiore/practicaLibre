@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NotificacionTableViewCell: UITableViewCell {
+class NotificacionCardTableViewCell: UITableViewCell {
     @IBOutlet weak var titulo: UILabel!
     @IBOutlet weak var imagen: UIImageView!
     

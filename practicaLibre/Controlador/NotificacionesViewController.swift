@@ -32,7 +32,7 @@ extension NotificacionesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaNotificacion", for: indexPath) as? NotificacionTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaNotificacion", for: indexPath) as? NotificacionCardTableViewCell
         cell?.titulo.text = notificaciones[indexPath.row].titulo
         cell?.imagen.image = notificaciones[indexPath.row].imagen
         return cell!
