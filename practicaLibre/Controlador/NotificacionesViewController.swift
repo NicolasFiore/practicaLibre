@@ -17,6 +17,7 @@ class NotificacionesViewController: UIViewController {
         super.viewDidLoad()
 
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UINib(nibName: "NotificacionTableViewCell", bundle: nil), forCellReuseIdentifier: "celdaNotificacion")
         
         var notificacion1 = NotificacionesModelo(titulo: "¡Nicolás tu iphone 15 te está esperando!", imagen: UIImage.iphone15)
@@ -36,5 +37,18 @@ extension NotificacionesViewController: UITableViewDataSource {
         cell?.titulo.text = notificaciones[indexPath.row].titulo
         cell?.imagen.image = notificaciones[indexPath.row].imagen
         return cell!
+    }
+}
+
+extension NotificacionesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        tableView.beginUpdates()
+        notificaciones.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        tableView.endUpdates()
     }
 }
