@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var direccion: UILabel!
     
     var productos: [ProductoModelo] = []
+    var productosFiltrados : [ProductoModelo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         //saca los bordes negros
         barraDeBusqueda.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
@@ -28,7 +31,6 @@ class ViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ProductosCardTableViewCell", bundle: nil), forCellReuseIdentifier: "mycustomcell")
-        
         
         let producto1 = ProductoModelo(nombre: "Xiaomi Mi Band 8", precio: "60.000", imagen: UIImage.miBand8)
         let producto2 = ProductoModelo(nombre: "Iphone 15", precio: "1.000.000", imagen: UIImage.iphone15)
@@ -46,8 +48,7 @@ class ViewController: UIViewController {
         productos.append(producto6)
         productos.append(producto7)
         
-        
-        
+        productosFiltrados = productos
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -61,7 +62,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return productos.count
+        return productosFiltrados.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -70,14 +71,31 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mycustomcell", for: indexPath) as? ProductosCardTableViewCell
-        cell?.imagenProducto.image = productos[indexPath.row].imagen
-        cell?.nombreProducto.text = productos[indexPath.row].nombre
-        cell?.precioProducto.text = " $\(productos[indexPath.row].precio)"
+        cell?.imagenProducto.image = productosFiltrados[indexPath.row].imagen
+        cell?.nombreProducto.text = productosFiltrados[indexPath.row].nombre
+        cell?.precioProducto.text = " $\(productosFiltrados[indexPath.row].precio)"
         return cell!
     }
 }
 
 extension ViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        productosFiltrados = []
+        
+        if barraDeBusqueda.text == ""{
+            productosFiltrados = productos
+        }
+        else {
+            for producto in productos {
+                if producto.nombre.lowercased().contains((barraDeBusqueda.text?.lowercased())!) {
+                    productosFiltrados.append(producto)
+                }
+            }
+        }
+        self.tableView.reloadData()
+    }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         barraDeBusqueda.resignFirstResponder()
     }
