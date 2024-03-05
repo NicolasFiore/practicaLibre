@@ -14,13 +14,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var direccion: UILabel!
     
     var productos: [ProductoModelo] = []
-    var productosFiltrados : [ProductoModelo] = []
+    var productosFiltrados: [ProductoModelo] = []
+    var agregarSacar: String?
+    
+    let producto1 = ProductoModelo(nombre: "Xiaomi Mi Band 8", precio: "60.000", imagen: UIImage.miBand8)
+    let producto2 = ProductoModelo(nombre: "Iphone 15", precio: "1.000.000", imagen: UIImage.iphone15)
+    let producto3 = ProductoModelo(nombre: "Samsung Galaxy S23", precio: "1.000.000", imagen: UIImage.s23)
+    let producto4 = ProductoModelo(nombre: "Samsung Galaxy S23 Ultra", precio: "1.700.000", imagen: UIImage.s23Ultra)
+    let producto5 = ProductoModelo(nombre: "Samsung Galaxy S23+", precio: "1.300.000", imagen: UIImage.s23Plus)
+    let producto6 = ProductoModelo(nombre: "Iphone 15 Pro Max", precio: "1.700.000", imagen: UIImage.iphone15ProMax)
+    let producto7 = ProductoModelo(nombre: "AirPods Pro2", precio: "300.000", imagen: UIImage.airpodsPro2)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+ 
         //saca los bordes negros
         barraDeBusqueda.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
         //cambia el fondo
@@ -31,14 +38,6 @@ class ViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ProductosCardTableViewCell", bundle: nil), forCellReuseIdentifier: "mycustomcell")
-        
-        let producto1 = ProductoModelo(nombre: "Xiaomi Mi Band 8", precio: "60.000", imagen: UIImage.miBand8)
-        let producto2 = ProductoModelo(nombre: "Iphone 15", precio: "1.000.000", imagen: UIImage.iphone15)
-        let producto3 = ProductoModelo(nombre: "Samsung Galaxy S23", precio: "1.000.000", imagen: UIImage.s23)
-        let producto4 = ProductoModelo(nombre: "Samsung Galaxy S23 Ultra", precio: "1.700.000", imagen: UIImage.s23Ultra)
-        let producto5 = ProductoModelo(nombre: "Samsung Galaxy S23+", precio: "1.300.000", imagen: UIImage.s23Plus)
-        let producto6 = ProductoModelo(nombre: "Iphone 15 Pro Max", precio: "1.700.000", imagen: UIImage.iphone15ProMax)
-        let producto7 = ProductoModelo(nombre: "AirPods Pro2", precio: "300.000", imagen: UIImage.airpodsPro2)
         
         productos.append(producto1)
         productos.append(producto2)
@@ -56,6 +55,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func carrito(_ sender: Any) {
+
     }
     
 }

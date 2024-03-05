@@ -12,12 +12,16 @@ class FavoritosViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var productosFavoritos: [ProductoModelo] = []
+    let vc = ViewController()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ProductosCardTableViewCell", bundle: nil), forCellReuseIdentifier: "mycustomcell")
+        
+        productosFavoritos.append(vc.producto1)
+        productosFavoritos.append(vc.producto2)
     }
     
 }

@@ -18,6 +18,7 @@ class ProductosCardTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,12 +31,12 @@ class ProductosCardTableViewCell: UITableViewCell {
             estadoFavorito = true
             botonFavoritos.setImage(UIImage.init(systemName: "heart.fill"), for: .normal)
             nombreproductoFavorito = nombreProducto.text
-            print(nombreProducto.text ?? "no hay nombre")
+            print(nombreproductoFavorito ?? "no hay nombre")
         }
         else {
             estadoFavorito = false
             botonFavoritos.setImage(UIImage.init(systemName: "heart"), for: .normal)
-            print("\(nombreProducto.text ?? "no hay nombre") se quito de favoritos")
+            print("\(nombreproductoFavorito ?? "no hay nombre") se quito de favoritos")
         }
     }
 }

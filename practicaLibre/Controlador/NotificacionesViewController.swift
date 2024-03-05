@@ -45,10 +45,30 @@ extension NotificacionesViewController: UITableViewDelegate {
         return .delete
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        tableView.beginUpdates()
-        notificaciones.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .fade)
-        tableView.endUpdates()
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+            -> UISwipeActionsConfiguration? {
+            let deleteAction = UIContextualAction(style: .destructive, title: nil) { (_, _, completionHandler) in
+                self.notificaciones.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                completionHandler(true)
+            }
+                deleteAction.title = "Eliminar"
+                
+                deleteAction.backgroundColor = .barraBuscador
+                let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+                return configuration
+    }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+            -> UISwipeActionsConfiguration? {
+            let deleteAction = UIContextualAction(style: .destructive, title: nil) { (_, _, completionHandler) in
+                self.notificaciones.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                completionHandler(true)
+            }
+                deleteAction.title = "Eliminar"
+                deleteAction.backgroundColor = .barraBuscador
+                let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+                return configuration
     }
 }
